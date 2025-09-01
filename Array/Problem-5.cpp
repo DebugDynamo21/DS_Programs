@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int missingNum(int arr, int n){
+int missingNum(int *arr, int n){
     int total = 10; // Total number of elements from 1 to n.
     int sum = (total * (total + 1)) / 2; // Sum of first n natural numbers.
     int arrSum = 0;
