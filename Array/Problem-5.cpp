@@ -8,7 +8,7 @@ int missingNum(int *arr, int n){
     int sum = (total * (total + 1)) / 2; // Sum of first n natural numbers.
     int arrSum = 0;
     for(int i = 0; i < n; i++){
-        arrSum += arr[i];
+        arrSum += arr[i];   //Sum of elements in the array.
     }
     return sum - arrSum;
 }
