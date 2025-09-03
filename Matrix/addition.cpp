@@ -12,7 +12,7 @@ int main(){
     cout << "Enter the order of matrix B(p x q): ";
     cin >> p >> q;
 
-    if(m != p and n != q){
+    if(m != p || n != q){
         cout << "Invalid order! Please enter a valid order such that (m x n) = (p x q)." << endl;
     }else{
 
