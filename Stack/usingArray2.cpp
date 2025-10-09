@@ -3,36 +3,36 @@
 #include <iostream>
 using namespace std;
 
-struct myStack{
+struct myStack{ // stack structure
     int *arr;
     int capacity;
     int top;
 
-    myStack(int cap){
+    myStack(int cap){   // constructor
         capacity = cap;
         arr = new int[capacity];
         top = -1;
     }
 
-    void push(int x){
+    void push(int x){   // push operation
         if(top == capacity - 1){
             cout << "Stack Overflow. Stack is full\n";
             return;
         }
-        arr[++top] = x;
+        arr[++top] = x; // increment top and add element
         cout << "Pushed value in stack: " << x << endl;
     }
 
-    void pop(){
+    void pop(){ // pop operation
         if(top == -1){
             cout << "Stack Underflow. Stack is empty\n";
         }else{
             cout << "Popped Value from stack: " << arr[top];
-            top--;
+            top--;  // decrement top
         }
     }
 
-    void peek(){
+    void peek(){    // peek operation
         if(top == -1){
             cout << "Stack is empty!\n";
         }else{
@@ -40,7 +40,7 @@ struct myStack{
         }
     }
 
-    void display(){
+    void display(){ // display stack elements
         if(top == -1){
             cout << "Stack is empty\n";
         }else{
@@ -56,7 +56,7 @@ struct myStack{
 int main(){
     int choice, val;
 
-    myStack st(5);
+    myStack st(5);  // create stack of capacity 5
 
     while(true){
         cout << "\n--------- STACK OPERATIONS MENU ---------\n";
