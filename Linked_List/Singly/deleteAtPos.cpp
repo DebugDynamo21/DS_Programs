@@ -1,4 +1,4 @@
-// Delete Node by Position.
+// Delete Node by Position using functions.
 
 #include <iostream>
 using namespace std;
